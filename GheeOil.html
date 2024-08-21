@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="gheeandoil.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+   
+<script>
+</script>
+<script>
+element=()=>{
+    
+    Arr=objectdisplay();
+	let main=document.getElementById("badmash");
+    Arr.map((ob,e)=>{
+        f1=document.createElement("div");
+	let img1=document.createElement("img");
+	let price=document.createElement("h3");
+	let name=document.createElement("h5");
+	price.innerHTML=ob.price;
+	img1.width=200;
+    name.innerHTML=ob.name;
+    img1.height=250;
+    img1.alt=("Photo not available");
+	img1.src=ob.src;
+	f1.className=" col-sm-12 col-sm-6 col-md-4 col-lg-4 col-lg-4 col-xl-3 col-xxl-3";
+	f1.appendChild(img1);
+	f1.appendChild(price);
+    f1.appendChild(name);
+	main.appendChild(f1);
+
+    });
+    
+	
+
+}
+</script>
+
+</head>
+<body>
+<div >
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand ms-3" href="index.html"><img src='wholesale.png' width='50px' /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html"><h5>Home</h5></a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="dryfruits.html"><h5>Dry Fruits</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Spices.html"><h5>Spices</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PackedItems.html"><h5>Packed Items</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="GheeOil.html"><h5>Ghee and oil</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Rice.html"><h5>Rice</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pulses.html"><h5>Pulses</h5></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<div class="container">
+	<div class="row " id="badmash"></div>	
+</div>
+</body>
+</html>
+<script>element()</script>
